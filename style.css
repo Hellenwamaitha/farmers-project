@@ -1,0 +1,159 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;   
+}
+.container{
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: var();
+    background-image:url('https://img.freepik.com/free-photo/sunny-meadow-landscape_1112-134.jpg?w=2000')
+}
+.centre{
+    align-content: center;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translate(050%, -50%);
+    font-style: oblique;
+    user-select: none;
+}
+.centre h1{
+    color: black;
+    font-size: 45px;
+    font-weight: bold;  
+}
+.centre p{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+    left: 30%;
+}
+.centre icon{
+    position: centre;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+}
+.logo{ 
+    width: 140px;
+    height: auto;
+    padding: 20px;
+
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display: inline-block;
+    justify-content: space-between;
+    font-weight: 500;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 13px;
+    transition: 4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background-color: black;
+    border-radius: 2px;
+}
+.centre button{
+    width: 150px;
+    height: 40px;
+    background: grey ;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.centre button:hover{
+    background-color: white;
+}
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(20px);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform .5s easez, height .2s ease;
+}
+.wrapper.active-popup{
+    transform: scale(1)
+}
+.wrapper.form-box-details{
+    transform: translatex(400px);
+    position: absolute;
+    transition: transform .18s ease;
+  }
+.wrapper .active .form-box.details{
+    transition: transform .18s ease;
+    transform: translatex(-400px);
+  }
+
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .icon-close{
+    position: absolute;
+    top:0;
+    right:0;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    z-index: 1;
+    font-size: 2em;
+}
+.form-box h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+.btn{
+    width:100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+}
+
+    
+
+
