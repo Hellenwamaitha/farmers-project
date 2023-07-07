@@ -1,47 +1,47 @@
-// Wait for the DOM content to load
-document.addEventListener("DOMContentLoaded", function() {
-  // Get the necessary elements
-  const registrationButton = document.querySelector(".btnregistration-popup");
-  const closeButton = document.querySelector(".icon-close");
-  const formWrapper = document.querySelector(".wrapper");
-  const form = document.querySelector(".form-box");
-  const usernameInput = document.querySelector("input[type='username']");
-  const regionInput = document.querySelector("input[type='region']");
-  const farmAcresInput = document.querySelector("input[type='Farm Acres']");
+// JavaScript code for handling navigation
 
-  // Add event listener to the registration button
-  registrationButton.addEventListener("click", function() {
-    formWrapper.style.display = "block"; // Show the form wrapper
-  });
+// Get the navigation links
+const navLinks = document.querySelectorAll('.navbar ul li a');
 
-  // Add event listener to the close button
-  closeButton.addEventListener("click", function() {
-    formWrapper.style.display = "none"; // Hide the form wrapper
-  });
+// Add event listener to each navigation link
+navLinks.forEach(link => {
+  link.addEventListener('click', function (event) {
+    // Prevent default link behavior
+    event.preventDefault();
 
-  // Add event listener to the form submit button
-  formsubmit.addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent form submission
+    // Remove the "active" class from all navigation links
+    navLinks.forEach(link => link.classList.remove('active'));
 
-    // Add event listener to the about button
-    aboutButton.addEventListener("click", function () {
-      
-    })
+    // Add the "active" class to the clicked navigation link
+    this.classList.add('active');
 
+    // Get the target page from the link's href attribute
+    const targetPage = this.getAttribute('href');
 
-    // Get the input values
-    const username = usernameInput.value;
-    const region = regionInput.value;
-    const farmAcres = farmAcresInput.value;
-
-    // Perform validation or further processing if needed
-
-    // Display the input values
-    console.log("Username:", username);
-    console.log("Region:", region);
-    console.log("Farm Acres:", farmAcres);
-
-    // Reset the form
-    form.reset();
+    // Use JavaScript to navigate to the target page
+    window.location.href = targetPage;
   });
 });
+
+
+// JavaScript code for displaying a registration popup
+
+// Get the registration button
+const registrationButton = document.querySelector('.btnregistration-popup');
+
+// Get the popup wrapper and iconClose
+const popupWrapper = document.querySelector('.wrapper');
+const iconClose = document.querySelector('.icon-close');
+
+// Add event listener to the registration button
+registrationButton.addEventListener('click', function () {
+  // Show the registration popup
+  popupWrapper.style.display = 'block';
+});
+
+// Add event listener to the icon Close
+iconClose.addEventListener('click', function () {
+  // Hide the registration popup
+  popupWrapper.style.remove = 'remove';
+});
+<li><a class="active" href="#">Home</a></li>
