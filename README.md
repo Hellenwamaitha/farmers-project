@@ -87,4 +87,4 @@ SOFTWARE.
 Hellen Wamaitha
 For questions or contributions email: [hellen.irungu@student.moringaschool.com]
 
-  [**Navigate to top**](https://github.com/Hellenwamaitha/code-3-challenge#code-challenge-3---)
+  [**Navigate to top**](https://github.com/Hellenwamaitha/farmers-registration#farmers-registration---)
