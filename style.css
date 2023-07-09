@@ -100,7 +100,7 @@
     justify-content: center;
     align-items: center;
     overflow: none;
-    transform: scale(1);
+    transform: scale(0);
     transition: transform .5s easez, height .2s ease;
 }
 .wrapper.active-popup{
