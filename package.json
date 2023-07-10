@@ -1,0 +1,19 @@
+{
+  "name": "farmers-project",
+  "version": "1.0.0",
+  "description": "This website allows to maize farmers to be registered and later on to receive subsidized fertilizers so as to improve food security and increase harvest yield.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "json-serve": "^0.1.0",
+    "json-server": "^0.17.3"
+  }
+}
