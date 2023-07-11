@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () =>{
   
 function handleSearch() {
   
-  fetch('https://github.com/Hellenwamaitha/jsonapi/blob/main/fertilizer.json' + search, {
+  fetch('' + search, {
       method: 'GET',
       header:{
           'Content-Type': 'application/json',
